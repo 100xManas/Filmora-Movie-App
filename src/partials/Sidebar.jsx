@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="w-[20vw] h-full border-r border-zinc-400">
+    <div className="w-[15vw] h-full border-r border-zinc-500">
       <h1 className="text-center ">
         <i className="ri-tv-fill text-[#6556CD] text-2xl"></i>
         <span className="text-white uppercase inline-block mx-2 my-3 font-bold text-xl tracking-wide">
@@ -10,10 +10,13 @@ function Sidebar() {
         </span>
       </h1>
 
-      <nav>
-        <h4 className="text-xl text-white capitalize mx-5 mt-5  tracking-tight">
-          New feeds
-        </h4>
+      <nav className="mt-3">
+        <div className="flex">
+          <h4 className="text-xl text-white capitalize ml-4 mr-2 font-bold tracking-tight">
+            New feeds
+          </h4>
+          <i className="ri-arrow-right-up-line text-white"></i>
+        </div>
 
         <div className="mx-7">
           <div className="text-white capitalize py-3 my-2 rounded-lg hover:bg-[#6556CD] duration-300 hover:text-white cursor-pointer ">
@@ -38,11 +41,16 @@ function Sidebar() {
           </div>
         </div>
       </nav>
-      <hr className="border-none h-[1px] w-[85%] mx-auto bg-zinc-400" />
-      <nav className="mt-8">
-        <h4 className="text-xl text-white capitalize mx-5 mt-5  tracking-tight">
-          website Information
-        </h4>
+
+      <hr className="border-none h-[1px] w-[82%] mx-auto bg-zinc-400" />
+
+      <nav className="mt-7">
+        <div className="flex">
+          <h4 className="text-xl text-white capitalize ml-4 mr-2 font-bold tracking-tight">
+            website Information
+          </h4>
+          <i className="ri-arrow-right-up-line text-white"></i>
+        </div>
 
         <div className="mx-7">
           <div className="text-white capitalize py-3 my-2 rounded-lg hover:bg-[#6556CD] duration-300 hover:text-white cursor-pointer ">
